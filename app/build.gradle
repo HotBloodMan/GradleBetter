@@ -47,13 +47,21 @@ android {
         }
     }
 
-    compileSdkVersion 28
+//    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.ljt.gradlebetter"
-        minSdkVersion 22
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+//        minSdkVersion 22
+//        targetSdkVersion 28
+//        versionCode 1
+//        versionName "1.0"
+
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         flavorDimensions "color"
@@ -82,7 +90,7 @@ android {
         }
     }
 
-
+//    buildToolsVersion = '29.0.1'
 
 
 }
